@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "rattanak/posts",
+    "description": "My post package development",
     "keywords": [
-        ":vendor_name",
+        "rattanak",
         "laravel",
-        ":package_slug"
+        "posts"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/rattanak/posts",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Rattanak Chuon",
+            "email": "rattanak.chuon@codingate.com",
             "role": "Developer"
         }
     ],
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Rattanak\\Posts\\": "src",
+            "Rattanak\\Posts\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Rattanak\\Posts\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -49,10 +49,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Rattanak\\Posts\\PostsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "Posts": "Rattanak\\Posts\\PostsFacade"
             }
         }
     },

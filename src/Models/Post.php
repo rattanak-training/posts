@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-  use HasFactory;
+    use HasFactory;
 
-  // Disable Laravel's mass assignment protection
-  protected $guarded = [];
+    // Disable Laravel's mass assignment protection
+    protected $guarded = [];
 
-  protected $fillable = [
+    protected $fillable = [
       'title',
       'body',
       'author',

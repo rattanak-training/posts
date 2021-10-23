@@ -1,6 +1,7 @@
 <?php
 
 namespace Rattanak\Posts\Http\Controllers;
+
 use Rattanak\Posts\Models\Post;
 
 class PostController extends Controller
@@ -25,7 +26,7 @@ class PostController extends Controller
         Post::create([
             'title' => 'package expert',
             'body' => 'learning package',
-            'author' => 'Borey'
+            'author' => 'Borey',
         ]);
 
         return 'success';

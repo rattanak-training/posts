@@ -2,9 +2,9 @@
 
 namespace Rattanak\Posts;
 
+use Rattanak\Posts\Commands\PostsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Rattanak\Posts\Commands\PostsCommand;
 
 class PostsServiceProvider extends PackageServiceProvider
 {
@@ -23,5 +23,4 @@ class PostsServiceProvider extends PackageServiceProvider
             ->hasMigration('create_posts_table')
             ->hasCommand(PostsCommand::class);
     }
-
 }
